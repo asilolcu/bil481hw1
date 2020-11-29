@@ -37,4 +37,16 @@ class AppTest {
      public void testNull() {
        assertFalse(App.dividible(null, 4,2));
      }
+
+     @Test
+     public void test1Negative() {
+        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1,5,10));
+       assertFalse(App.dividible(array, -1,2));
+     }
+
+     @Test
+     public void test2Negative() {
+       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(12,13,14,17));
+       assertTrue(App.dividible(array, -2,-3));
+     }
  }

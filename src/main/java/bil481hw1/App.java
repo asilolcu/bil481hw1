@@ -11,6 +11,8 @@ public class App {
       //returns true if any integer in the array is dividible (x%y=0) to the multiply of given integers.
       public static boolean dividible(ArrayList<Integer> array, int e, int f){
           System.out.println("Checking divisibility");
+          if(e  < 0 && f < 0) return true;
+          if(e  < 0 || f < 0) return false;
           if (array == null) return false;
           else if( array.size() == 0) return false;
           for (int elt : array) {
