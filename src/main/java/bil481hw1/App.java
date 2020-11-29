@@ -8,8 +8,8 @@ public class App {
         return "Hello world.";
     }
 
-      //returns true if any integer in the array is dividible (x%y=0) to the multiply of given integers.
-      public static boolean dividible(ArrayList<Integer> array, int e, int f){
+      //returns true if any integer in the array is dividibleByMult (x%y=0) to the multiply of given integers.
+      public static boolean dividibleByMult(ArrayList<Integer> array, int e, int f){
           System.out.println("Checking divisibility");
           if(e  < 0 && f < 0) return true;
           if(e  < 0 || f < 0) return false;

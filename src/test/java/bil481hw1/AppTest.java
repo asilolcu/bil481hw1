@@ -18,35 +18,35 @@ class AppTest {
     @Test
     public void testDividible() {
        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(5,10,9,20,24));
-       assertTrue(App.dividible(array, 3,2));
+       assertTrue(App.dividibleByMult(array, 3,2));
      }
  
      @Test
      public void testNotDividible() {
         ArrayList<Integer> array = new ArrayList<>(Arrays.asList(2,4,6,8,10,14));
-        assertFalse(App.dividible(array, 5,3));
+        assertFalse(App.dividibleByMult(array, 5,3));
       }
  
      @Test
      public void testEmptyArray() {
        ArrayList<Integer> array = new ArrayList<>();
-       assertFalse(App.dividible(array, 10,1));
+       assertFalse(App.dividibleByMult(array, 10,1));
      }
  
      @Test
      public void testNull() {
-       assertFalse(App.dividible(null, 4,2));
+       assertFalse(App.dividibleByMult(null, 4,2));
      }
 
      @Test
      public void test1Negative() {
         ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1,5,10));
-       assertFalse(App.dividible(array, -1,2));
+       assertFalse(App.dividibleByMult(array, -1,2));
      }
 
      @Test
      public void test2Negative() {
        ArrayList<Integer> array = new ArrayList<>(Arrays.asList(12,13,14,17));
-       assertTrue(App.dividible(array, -2,-3));
+       assertTrue(App.dividibleByMult(array, -2,-3));
      }
  }
